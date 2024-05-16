@@ -1,0 +1,63 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3aead14686cb3669563a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":274.01785508316226,\"y\":192.75738771367276,\"z\":0,\"width\":298.58497312510093,\"height\":300.4747514360193}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.Column10\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column10\"},\"Name\":\"Sheet1.Column10\",\"NativeReferenceName\":\"Column10\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 300.47,
+          "width": 298.58,
+          "x": 274.02,
+          "y": 192.76,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionfc15ddf46060c06dc47c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3a649aa5dc839c0972a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":171.9698262935708,\"y\":170.08004798265245,\"z\":0,\"width\":625.5166209139774,\"height\":440.318346443978}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.Column2\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.Column10)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column2\"},\"Name\":\"Sheet1.Column2\",\"NativeReferenceName\":\"Column2\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column10\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.Column10)\",\"NativeReferenceName\":\"Count of Column10\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column10\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 440.32,
+          "width": 625.52,
+          "x": 171.97,
+          "y": 170.08,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
